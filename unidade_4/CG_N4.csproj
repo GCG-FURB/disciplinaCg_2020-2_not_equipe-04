@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>CG_N4</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="DadosMdl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="CG_N4.code-workspace" />
+    <None Remove="Cilindro.ggb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CG_N4.sln" />
+  </ItemGroup>
+
+  <ItemGroup>
+  <!-- 
+MacOS
+    <PackageReference Include="OpenTK" Version="3.2.0"/>
+Windows
+    <PackageReference Include="OpenTK.NetCore" Version="*" />
+  -->
+    <PackageReference Include="CjClutter.ObjLoader" Version="1.0.0" />
+    <PackageReference Include="OpenTK.NetCore" Version="*" />
+    <PackageReference Include="SharpGL" Version="3.1.1" />
+    <PackageReference Include="SharpGL.Serialization" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CG_Biblioteca">
+      <HintPath>bin\Debug\netcoreapp3.1\CG_Biblioteca.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
